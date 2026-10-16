@@ -3,22 +3,51 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>awawaya</title>
+<title>Awawaya</title>
 <style>
-  body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;max-width:640px;margin:48px auto;padding:0 24px;color:#1f2937;line-height:1.7}
-  h1{font-size:28px} .tag{color:#0e7490;font-weight:600}
-  .card{background:#f0fafb;border:1px solid #cdeef2;border-radius:12px;padding:16px 20px;margin:12px 0}
+  body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;max-width:720px;margin:48px auto;padding:0 24px;color:#1f2937;line-height:1.75}
+  h1{font-size:30px;margin-bottom:4px} .tag{color:#0e7490;font-weight:600}
+  h2{font-size:18px;margin-top:32px;border-left:3px solid #0e7490;padding-left:10px}
+  .card{background:#f0fafb;border:1px solid #cdeef2;border-radius:12px;padding:14px 20px;margin:10px 0}
+  ul{padding-left:22px} li{margin:4px 0}
+  .en{background:#fafaf9;border:1px solid #e7e5e4;border-radius:12px;padding:14px 20px;margin:16px 0;font-size:14.5px;color:#374151}
+  footer{margin-top:44px;font-size:13px;color:#6b7280;border-top:1px solid #e5e7eb;padding-top:16px}
   a{color:#0e7490}
-  footer{margin-top:40px;font-size:13px;color:#6b7280;border-top:1px solid #e5e7eb;padding-top:16px}
 </style>
 </head>
 <body>
-<h1>awawaya <span class="tag">· personal tools</span></h1>
-<p><strong>awawaya</strong> 是个人自用的自动化与效率工具集，基于 ZCode Agent 环境运行，主要能力包括：</p>
-<div class="card">📮 <strong>Gmail 集成</strong> —— 通过 Google OAuth 由本人授权，辅助搜索、整理和起草邮件。</div>
-<div class="card">☁️ <strong>跨设备同步</strong> —— 在本人设备之间同步配置与工作文件。</div>
-<p>本应用不对外提供服务，不做商业化运营，仅归应用所有者个人使用。</p>
+<h1>Awawaya</h1>
+<p class="tag">个人生产力工具 · Personal Productivity Toolkit</p>
+
+<h2>关于本应用（About）</h2>
+<p><strong>Awawaya</strong> 是一款归应用所有者个人使用的自动化与效率工具集，基于 ZCode Agent 运行环境构建。本应用不面向公众提供服务，不进行商业化运营。</p>
+
+<h2>应用用途（Purpose）</h2>
+<ul>
+  <li><strong>邮件管理</strong> —— 经应用所有者本人通过 Google OAuth 明确授权后，使用 Gmail API 对<strong>其本人邮箱</strong>执行：搜索与读取邮件、管理标签与过滤器、整理归档、起草和发送邮件。</li>
+  <li><strong>个人配置同步</strong> —— 在应用所有者本人的设备之间同步工具配置与工作文件（不涉及任何 Google 用户数据）。</li>
+</ul>
+
+<h2>权限与数据使用（Permissions &amp; Data Use）</h2>
+<div class="card">
+本应用仅申请以下 Google OAuth 权限范围，且仅在所有者本人授权后访问其本人数据：<br>
+• <code>gmail.modify</code>（读取 / 整理 / 发送邮件）　• <code>gmail.settings.basic</code>（标签、过滤器设置）
+</div>
+<p>访问凭证（OAuth 令牌）仅保存在所有者本人的设备上。本应用不收集任何第三方用户数据。</p>
+
+<h2>合规声明（Compliance）</h2>
+<ul>
+  <li>本应用遵守 <a href="https://developers.google.com/terms">Google API 服务条款</a>及 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 服务用户数据政策（含 Limited Use 有限使用要求）</a>。</li>
+  <li>本应用不将 Google API 用于生成 AI NCII（AI 生成的未经同意的亲密影像）或任何其他未授权、被禁止的用途。</li>
+  <li>本应用不会将用户数据出售、出租或用于广告或第三方利益目的。</li>
+</ul>
+
+<div class="en">
+<strong>English summary:</strong> Awawaya is a personal-use productivity toolkit owned and operated solely by its developer. With the owner's explicit Google OAuth consent, it uses the Gmail API (scopes: <code>gmail.modify</code>, <code>gmail.settings.basic</code>) to search, read, label, filter, archive, draft and send email in the owner's own mailbox, and to sync tool configuration among the owner's own devices. It collects no third-party user data, stores OAuth tokens only on the owner's devices, and complies with the Google API Services Terms of Service and User Data Policy including the Limited Use requirements. It does not use Google APIs for AI NCII or any prohibited purpose.
+</div>
+
 <footer>
+  应用名称：Awawaya · 联系方式：Google Cloud Console 本应用登记的支持邮箱 ·
   <a href="privacy.html">隐私政策 Privacy Policy</a> ·
   <a href="terms.html">服务条款 Terms of Service</a>
 </footer>
